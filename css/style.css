@@ -1,0 +1,248 @@
+@font-face {
+	font-family: "UVNGiayTrang";
+	src: url("UVNGiayTrang.TTF")  format("truetype");
+}
+@font-face {
+	font-family: "DancingScript-VariableFont_wght";
+	src: url("DancingScript-VariableFont_wght.TTF")  format("truetype")
+}
+
+/* General Begin */
+body {
+	font-family: "UVNGiayTrang", sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#wrap {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url('../imgs/background.jpg') no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+/* General End */
+
+/* Loading Begin */
+#loading {
+	background: #193c54 url("../imgs/loading-bg.jpg") no-repeat center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;	
+}
+
+#loading .spinner {
+	position: relative;
+	width: 94px;
+	height: 112px;
+	top: 50%;
+	margin: -56px auto;
+	background: url('../imgs/loading.png') no-repeat center;
+	-webkit-animation: mask 1s infinite alternate;
+	-moz-animation: mask 1s infinite alternate;
+	-ms-animation: mask 1s infinite alternate;
+	-o-animation: mask 1s infinite alternate;
+	animation: mask 1s infinite alternate;
+}
+
+@-webkit-keyframes mask {
+    0% {
+    	-webkit-transform: rotate(90deg);
+    }
+    100% {
+    	-webkit-transform: rotate(-90deg);
+    }
+}
+
+@-moz-keyframes mask {
+    0% {
+    	-moz-transform: rotate(90deg);
+    }
+    100% {
+    	-moz-transform: rotate(-90deg);
+    }
+}
+
+@-ms-keyframes mask {
+    0% {
+    	-ms-transform: rotate(90deg);
+    }
+    100% {
+    	-ms-transform: rotate(-90deg);
+    }
+}
+
+@-o-keyframes mask {
+    0% {
+    	-o-transform: rotate(90deg);
+    }
+    100% {
+    	-o-transform: rotate(-90deg);
+    }
+}
+
+@keyframes mask {
+    0% {
+    	transform: rotate(90deg);
+    }
+    100% {
+    	transform: rotate(-90deg);
+    }
+}
+/* Loading End */
+
+/* Ice Begin */
+.ice {
+	background: url('../imgs/ice.png') repeat-x bottom left;
+	position: absolute;
+	width: 100%;
+	height: 71px;
+	top: 0;
+	left: 0;
+	z-index: 9000;
+}
+/* Ice End */
+
+/* Snow Begin */
+.snow {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 800;
+}
+/* Snow End */
+
+/* Santa Claus Begin */
+#santaClaus {
+	position: relative;
+	top: 0;
+	left: -390px;
+	z-index: 100;
+}
+/* Santa Claus End */
+
+/* Reindeer Begin */
+#reindeer {
+	position: fixed;
+	bottom: 25px;
+	right: 0;
+	cursor: hand;
+	cursor: pointer;
+	z-index: 10000;
+}
+/* Reindeer End */
+
+#letter {
+	display: none;
+	background: url("../imgs/letter.png") no-repeat;
+	position: relative;
+	width: 367px;
+	height: 600px;
+	margin: 0 auto;
+	z-index: 200;
+}
+/*Phần tiêu đề*/
+.message {
+	position: absolute;
+	font-family: "DancingScript-VariableFont_wght", sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 1.35em;
+	color: red;
+	top: 30px;
+	left: 40px;
+	max-width: 310px;
+	word-wrap: break-word;
+}
+/* Phần lời chúc */
+.message1 {
+	position: absolute;
+	font-family: "UVNGiayTrang", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #00B2EE;
+	top: 68px;
+	left: 20px;
+	max-width: 330px;
+	word-wrap: break-word;
+}
+
+.message2 {
+	position: absolute;
+	font-family: "UVNGiayTrang", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #00B2EE;
+	top: 96px;
+	left: 40px;
+	max-width: 330px;
+	word-wrap: break-word;
+}
+
+.message3 {
+	position: absolute;
+	font-family: "UVNGiayTrang", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #00B2EE;
+	top: 125px;
+	left: 70px;
+	max-width: 360px;
+	word-wrap: break-word;
+}
+
+.message4 {
+	position: absolute;
+	font-family: "UVNGiayTrang", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #00B2EE;
+	top: 152px;
+	left: 75px;
+	max-width: 280px;
+	word-wrap: break-word;
+}
+
+.message5 {
+	position: absolute;
+	font-family: "UVNGiayTrang", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #00B2EE;
+	top: 179px;
+	left: 115px;
+	max-width: 280px;
+	word-wrap: break-word;
+}
+.message6 {
+	position: absolute;
+	font-family: "DancingScript-VariableFont_wght", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #ee0030;
+	top: 220px;
+	left: 125px;
+	max-width: 280px;
+	word-wrap: break-word;
+}
